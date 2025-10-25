@@ -38,9 +38,10 @@ BakkalAcilisTarih datetime,
 BakkalSahipAd varchar(20),
 BakkalSahipSoyad varchar(20),
 UrunId int,
-topanciid int,
+topancıid int,
 KasaId int,
 MusteriId int)
+
 
 
 
