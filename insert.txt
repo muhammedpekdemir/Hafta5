@@ -1,0 +1,44 @@
+create table Urunler(
+UrunID int primary key,
+UrunAd varchar(20),
+UrunTür int,
+UrunAlisFiyati int,
+UrunSatisFiyati int,
+UrunNetKar int,
+UrunSKT datetime,
+UrunStok smallint)
+
+create table Kasa(
+KasaID int primary key,
+ToplamKazanc int,
+Vergi int,
+NetKazanc int)
+
+create table Musteriler(
+MusteriID int primary key,
+MusteriAd int,
+MusteriYas int,
+MusteriCinsiyet int,
+MusteriOrtalamaHarcama int,
+MusteriBorc int,
+MusteriAlacak int)
+
+create table Toptancilar(
+ToptanciID int primary key,
+ToptancıAd varchar(20),
+ToptanciAlinanMalTürü smallint,
+ToptanciAdres varchar(50))
+
+create table BakkalBilgiler(
+BakkalID int primary key,
+BakkalAd varchar(20),
+BakkalAdres varchar(50),
+BakkalAcilisTarih datetime,
+BakkalSahipAd varchar(20),
+BakkalSahipSoyad varchar(20))
+
+
+
+
+
+
