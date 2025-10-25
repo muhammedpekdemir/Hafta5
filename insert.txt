@@ -6,7 +6,8 @@ UrunAlisFiyati int,
 UrunSatisFiyati int,
 UrunNetKar int,
 UrunSKT datetime,
-UrunStok smallint)
+UrunKalanStok smallint,
+UrunGelenStok smallint)
 
 create table Kasa(
 KasaID int primary key,
@@ -16,7 +17,7 @@ NetKazanc int)
 
 create table Musteriler(
 MusteriID int primary key,
-MusteriAd int,
+MusteriAd varchar(50),
 MusteriYas int,
 MusteriCinsiyet int,
 MusteriOrtalamaHarcama int,
@@ -35,7 +36,12 @@ BakkalAd varchar(20),
 BakkalAdres varchar(50),
 BakkalAcilisTarih datetime,
 BakkalSahipAd varchar(20),
-BakkalSahipSoyad varchar(20))
+BakkalSahipSoyad varchar(20),
+UrunId int,
+topanciid int,
+KasaId int,
+MusteriId int)
+
 
 
 
